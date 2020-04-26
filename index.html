@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="wide wow-animation desktop landscape rd-navbar-static-linked" lang="en">
+<head>
+    <style>
+        .gm-control-active > img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .gm-control-active > img:nth-child(1) {
+            display: block;
+        }
+
+        .gm-control-active:hover > img:nth-child(1),
+        .gm-control-active:active > img:nth-child(1) {
+            display: none;
+        }
+
+        .gm-control-active:hover > img:nth-child(2),
+        .gm-control-active:active > img:nth-child(3) {
+            display: block;
+        }
+    </style>
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px;
+        }
+
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc;
+        }
+
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0;
+        }
+
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+        }
+
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+            0 1px 3px 1px rgba(60, 64, 67, 0.15);
+        }
+
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043;
+        }
+    </style>
+    <style>
+        .gm-ui-hover-effect {
+            opacity: 0.6;
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1;
+        }
+    </style>
+    <!-- Site Title-->
+    <title>Coaching "New Coast"</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,500,500italic,700"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="/images/favicon.png" sizes="32x32" type="image/png"/>
+</head>
+<body class="">
+<!-- Page-->
+<div class="page">
+    <header class="page-header section">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap" style="height: 149px;">
+            <nav class="rd-navbar rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="180px" data-lg-stick-up-offset="50px" data-md-stick-up="true" data-lg-stick-up="true">
+                <div class="rd-navbar-aside-outer">
+                    <div class="rd-navbar-aside__toggle rd-navbar-static--hidden toggle-original" data-rd-navbar-toggle=".rd-navbar-aside">
+                        <span></span>
+                    </div>
+                    <div class="rd-navbar-aside toggle-original-elements">
+                        <div class="object-inline">
+                            <span class="icon icon-sm icon-darker material-icons-phone_iphone"></span><a href="tel:+79184445759">+7 918 444 57 59</a>
+                        </div>
+                        <ul class="list-inline-xs">
+                            <li>
+                                <a class="icon icon-xs icon-darker fa fa-vk" href="https://vk.com/i_annie1308"></a>
+                            </li>
+                            <li>
+                                <a class="icon icon-xs icon-darker fa fa-instagram" href="https://instagram.com/ann_matveeva_?igshid=1ecconxb332eb"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <!-- RD Navbar Panel -->
+                        <div class="rd-navbar-panel">
+                            <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                                <span></span>
+                            </button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand">
+                                <a href="/" class="brand">
+                                    <div class="brand__name">
+                                        <img src="images/logo.png" alt=""/>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- RD Navbar Nav-->
+                        <div class="rd-navbar-nav-wrap toggle-original-elements">
+                            <ul class="rd-navbar-nav">
+                                <li class="active rd-navbar--has-dropdown">
+                                    <a href="/">Что такое коучинг?</a>
+                                </li>
+
+                                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                                    <a href="#Aboutmyself">О себе</a>
+                                </li>
+
+                                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                                    <a href="#Withwhomiwork">С кем работаю? </a>
+                                </li>
+
+                                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                                    <a href="#Benefits">Преимущества</a>
+                                </li>
+
+                                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                                    <a href="#Duration">Продолжительность</a>
+                                </li>
+
+                                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                                    <a href="#Contacts">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Slider-->
+    <section class="section section-swiper">
+        <!-- Swiper-->
+        <div class="swiper-container swiper-slider swiper-slider_style-1 swiper-container-horizontal" data-autoplay="4000" data-simulate-touch="true">
+            <div class="swiper-wrapper" style="
+                            transform: translate3d(-3921px, 0px, 0px);
+                            transition-duration: 0ms;
+                        ">
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-slide-bg="images/1.jpg" style="
+                                background-image: url(images/1.jpg);
+                                background-size: cover;
+                                width: 1307px;
+                            " data-swiper-slide-index="2">
+                    <div class="swiper-slide-caption">
+                        <div class="shell">
+                            <div class="range">
+                                <div class="cell-sm-9">
+                                    <h2 data-caption-animate="fadeInLeftSmall-v2" class="not-animated">
+                                        "Новый берег - возможность каждого выбрать путь к совершентсованию своего внутреннего мира. </h2>
+                                    <h2 data-caption-animate="fadeInRightSmall-v2" data-caption-delay="50" class="not-animated">
+                                        Начнём путь к Вашей лучшей жизнь вместе!" </h2>
+                                    <a class="button button-primary not-animated" href="#Contacts" data-caption-animate="fadeInLeftSmall" data-caption-delay="120">Start here!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-primary swiper-slide-duplicate-next" data-slide-bg="images/2.jpg" style="
+                                background-image: url(images/2.jpg);
+                                background-size: cover;
+                                width: 1307px;
+                            " data-swiper-slide-index="0">
+                    <div class="swiper-slide-caption">
+                        <div class="shell">
+                            <div class="range">
+                                <div class="cell-sm-9">
+                                    <h4 data-caption-animate="fadeInLeftSmall" class="not-animated">
+                                        "Новый берег - возможность каждого выбрать путь к совершентсованию своего внутреннего мира. </h4>
+                                    <h3 data-caption-animate="fadeInRightSmall-v2" data-caption-delay="200" class="not-animated">
+                                        Начнём путь к Вашей лучшей жизнь вместе!" </h3>
+                                    <a class="button button-primary not-animated" href="#Contacts" data-caption-animate="fadeInLeftSmall" data-caption-delay="50">Связаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-secondary-4 swiper-slide-prev" data-slide-bg="images/3.jpg" style="
+                                background-image: url(images/3.jpg);
+                                background-size: cover;
+                                width: 1307px;
+                            " data-swiper-slide-index="1">
+                    <div class="swiper-slide-caption">
+                        <div class="shell">
+                            <div class="range">
+                                <div class="cell-sm-9">
+                                    <h4 data-caption-animate="fadeInLeftSmall" class="not-animated">
+                                        "Новый берег - возможность каждого выбрать путь к совершентсованию своего внутреннего мира. </h4>
+                                    <h3 data-caption-animate="fadeInRightSmall-v2" data-caption-delay="260" class="not-animated">
+                                        Начнём путь к Вашей лучшей жизнь вместе!" </h3>
+
+                                    <a class="button button-primary not-animated" href="#Contacts" data-caption-animate="fadeInRightSmall" data-caption-delay="50">Связаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper Pagination-->
+            <div class="swiper-pagination-wrap">
+                <div class="swiper-pagination swiper-pagination_marked swiper-pagination-clickable swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination__mark"></span>
+                </div>
+            </div>
+            <!-- Swiper Navigation-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="section section-lg bg-gray-1">
+        <div class="shell">
+            <h4 class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                Что такое коучинг? </h4>
+            <div class="range range-50">
+                <div class="cell-xs-6 cell-md-3 wow fadeInLeftSmall" style="
+                                visibility: visible;
+                                animation-name: fadeInLeftSmall;
+                            ">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_limited">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-move23"></span>
+                        <h5 class="blurb-minimal__title">
+                            Помощь в изменение жизни </h5>
+                        <p>
+                            Вместе поймём цели, наметим шаги к изменениям, проработаем страхи. </p>
+                    </article>
+                </div>
+                <div class="cell-xs-6 cell-md-3 wow fadeInLeftSmall" data-wow-delay=".1s" style="
+                                visibility: visible;
+                                animation-delay: 0.1s;
+                                animation-name: fadeInLeftSmall;
+                            ">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_limited">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-business161"></span>
+                        <h5 class="blurb-minimal__title">Мотивация</h5>
+                        <p>
+                            Моральная поддержка при изменениях. У Вас будет человек, который следит за прогрессом. </p>
+                    </article>
+                </div>
+                <div class="cell-xs-6 cell-md-3 wow fadeInLeftSmall" data-wow-delay=".2s" style="
+                                visibility: visible;
+                                animation-delay: 0.2s;
+                                animation-name: fadeInLeftSmall;
+                            ">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_limited">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-share25"></span>
+                        <h5 class="blurb-minimal__title">
+                            Работа с препятствиями </h5>
+                        <p>
+                            Найдём, что мешает Вам меняться и жить по-новому, и продумаем, как можно обойти эти препятствия. </p>
+                    </article>
+                </div>
+                <div class="cell-xs-6 cell-md-3 wow fadeInLeftSmall" data-wow-delay=".3s" style="
+                                visibility: visible;
+                                animation-delay: 0.3s;
+                                animation-name: fadeInLeftSmall;
+                            ">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_limited">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-coffee57"></span>
+                        <h5 class="blurb-minimal__title">
+                            Взгляд со стороны </h5>
+                        <p>
+                            Иногда Вы слишком увлечены своими проблемами, чтобы увидеть хорошее решение. Я постараюсь дать Вам наиболее полную картину, чтобы Вы сами смогли по-новому оценить свою ситуацию. </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Aboutmyself" class="section section-custom-1 bg-image bg-image-1">
+        <div class="section-custom-1__inner">
+            <div class="shell">
+                <div class="range" style="
+                                align-items: center;
+                                justify-content: space-evenly;
+                            ">
+                    <div class="cell-sm-7 cell-md-6 cell-lg-5">
+                        <h4>Дивизинюк Анна Дмитриевна</h4>
+                        <p class="heading-5 text-primary">
+                            Coaching "New Coast" </p>
+
+                        <h5 class="offset-custom-1">
+                            Все мы УСТОЙЧИВЫ, АДАПТИВНЫ и СИЛЬНЫ сверх всякого воображения! </h5>
+                        <p>
+                            Здравствуйте! Я - Дивизинюк Анна, профессиональный психолог, коуч и консультант. Моя философия достижения успеха для моих клиентов проста – если Вы считаете, что заслуживаете большего, я могу помочь Вам достичь этого. </p>
+
+                        <h5 class="offset-custom-1">Образование</h5>
+                        <p></p>
+                        <ul>
+                            <li>
+                                • Российская академия народного хозяйства и государственной службы при Президенте РФ (РАНХиГС) - Общая психология.
+                            </li>
+                            <br/>
+                            <li>
+                                • Московская высшая школа социальных и экономических наук (МВШСЭН) - Психологическое консультирование и коучинг.
+                            </li>
+                            <br/>
+                            <li>
+                                • University of Coventry - Counselling, Coaching and Mentoring (BA).
+                            </li>
+                        </ul>
+
+                        <p>
+                            <i>Лучшее ощущение – видеть, как быстро люди меняют свою жизнь, <br/> как наполняют её новыми смыслами и избавляют от ненужного.</i>
+                        </p>
+
+                        <div class="group-lg group-middle">
+                            <a class="button button-primary" href="#">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="cell-sm-7 cell-md-6 cell-lg-5" style="margin-top: 10px;">
+                        <img src="images/IMG_4493.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News-->
+    <section id="Withwhomiwork" class="section section-xl section-xl-mod-1 bg-white text-center">
+        <div class="shell">
+            <h4>Я работаю с запросами:</h4>
+            <div class="range range-50" style="
+                            justify-content: space-evenly;
+                            align-items: center;
+                        ">
+                <div class="cell-sm-6 cell-md-4">
+                    <!-- Post minimal-->
+                    <article class="post-minimal">
+                        <div class="post-minimal__main">
+                            <span style="font-size: 50px;" class="fa fa-user-o"></span>
+                            <p class="post-minimal__title">
+                                Индивидуальное консультирование </p>
+                            <p>
+                                Нужна ли Вам какая-либо индивидуальная поддержка - будь то решения конкретной проблемы или разработка плана изменений для того, чтобы чувствовать себя в целом более удовлетворённым и счастливым? Если это так, то я помогу Вам определить жизненные и профессиональные приоритеты, сформировать цели и найти ресурсы для их достижения. <br/> Как и многие частные клиенты, Вы, возможно, чувствуете, что… </p>
+                            <ul>
+                                <li>
+                                    • Вас что-либо беспокоит
+                                </li>
+                                <li>
+                                    • Вы хотите внести некоторые изменения, но не знаете, с чего начать
+                                </li>
+                                <li>
+                                    • Вы хотите по-другому относиться к себе и своей жизни
+                                </li>
+                                <li>
+                                    • Вы готовы подумать о том, что действительно важно для вас, даже если это трудно
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-sm-6 cell-md-4">
+                    <!-- Post minimal-->
+                    <article class="post-minimal">
+                        <div class="post-minimal__main">
+                            <span style="font-size: 50px;" class="fa fa-users"></span>
+                            <p class="post-minimal__title">
+                                Групповой коучинг и тренинги </p>
+                            <p>
+                                Являетесь ли Вы владельцем бизнеса, руководителем или специалистом по кадрам, ищущим тренера для себя и своих сотрудников? Если это так, то я предоставляю бизнес-коучинг, командный коучинг, коучинг новообразовавшимся коллективам и учебным группам. </p>
+                            <ul>
+                                <li>
+                                    • Повышение коллективной осознанности
+                                </li>
+                                <li>
+                                    • Генерирование совместной ответственности и единодушия внутри команды
+                                </li>
+                                <li>
+                                    • Повышение уровня доверия и открытости
+                                </li>
+                                <li>
+                                    • Улучшение коммуникативных навыков
+                                </li>
+                                <li>
+                                    • Выявление командной динамики и мобилизация потенциала команды
+                                </li>
+                                <li>• Развитие лидерских навыков</li>
+                                <li>
+                                    • Выявление слепых зон, сдерживающих производительность
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Benefits" class="section section-xl section-xl-mod-1 bg-primary bg-primary-gradient-1-animated text-center">
+        <div class="shell">
+            <h4>В чём преимущества работы с коучем?</h4>
+            <div class="range range-50">
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_centered">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-flash20"></span>
+                        <h5 class="blurb-minimal__title">Скорость</h5>
+                        <p>
+                            Вы двигаетесь к своим целям намного быстрее, чем если бы делали это самостоятельно. </p>
+                    </article>
+                </div>
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_centered">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-gps19"></span>
+                        <h5 class="blurb-minimal__title">
+                            Сфокусированность </h5>
+                        <p>
+                            Коуч помогает Вам держать фокус на долгосрочной цели и поддерживает его на пути по достижению Вашей цели. </p>
+                    </article>
+                </div>
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_centered">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-shower9"></span>
+                        <h5 class="blurb-minimal__title">
+                            Осознанность </h5>
+                        <p>
+                            Вы поднимаете уровень осознанности во всех сферах своей жизни, учитесь отделать собственные желания от навязанных вам обществом. </p>
+                    </article>
+                </div>
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Blurb minimal-->
+                    <article class="blurb-minimal blurb-minimal_centered">
+                        <span class="blurb-minimal__icon fl-fill-round-icons-persons11"></span>
+                        <h5 class="blurb-minimal__title">Поддержка</h5>
+                        <p>
+                            Коуч мотивирует, поддерживает и искренне верит в Вас и ваши начинания. </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Duration" class="section section-xl bg-secondary-2 text-center">
+        <div class="shell">
+            <h4>Как долго продлится коучинг?</h4>
+            <div class="range range-50">
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Quote modern-->
+                    <article class="quote-modern">
+                        <div class="quote-modern__main">
+                            <p class="q">
+                                Коучинг – ограниченная по времени работа. </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Quote modern-->
+                    <article class="quote-modern">
+                        <div class="quote-modern__main">
+                            <p class="q">
+                                Серьёзные сдвиги как правило после первой сессии. </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Quote modern-->
+                    <article class="quote-modern">
+                        <div class="quote-modern__main">
+                            <p class="q">
+                                С большинством запросов нужно отработать 4 – 8 сессий. </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-sm-3 cell-md-3">
+                    <!-- Quote modern-->
+                    <article class="quote-modern">
+                        <div class="quote-modern__main" style="padding: 29px 31px;">
+                            <p class="q">
+                                Максимальный срок – до полугода. Если хотите радикально поменять свою жизнь :) </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contacts" class="section pre-footer-corporate">
+        <div class="shell-fluid">
+            <div class="range">
+                <div class="cell-sm-6 bg-primary bg-primary-gradient-2">
+                    <div class="cell__inner">
+                        <h4>Записаться</h4>
+                        <p>
+                            Ваш электронный адрес не будет опубликован. Обязательные поля помечены звездочкой (*) </p>
+
+                        <form method="post" action="https://mailthis.to/newcoast.psy@gmail.com">
+                            <div class="form-wrap">
+                                <label class="form-label-outside" for="contact-name">Ваше имя *</label> <input class="form-input" id="contact-name" type="text" name="name"/>
+                            </div>
+                            <div class="form-wrap">
+                                <label for="contact-telefon" class="form-label-outside">Ваш телефон *</label> <input class="form-input" id="contact-telefon" type="tel" name="tel"/>
+                            </div>
+                            <div class="form-wrap">
+                                <label class="form-label-outside" for="contact-email">Ваш E-mail *</label> <input class="form-input" id="contact-email" type="email" name="email"/>
+                            </div>
+                            <div class="form-wrap">
+                                <label class="form-label-outside" for="contact-message">Комментарий *</label> <textarea class="form-input" id="contact-message" name="comments"></textarea>
+                            </div>
+                            <button class="button button-primary" type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="cell-sm-6 bg-gray-1">
+                    <div class="cell__inner">
+                        <h4 class="pre-footer-corporate__heading">
+                            Контакты: </h4>
+                        <ul class="list-md">
+                            <li>
+                                <dl class="list-terms-justified">
+                                    <dt>E-mail</dt>
+                                    <dd>
+                                        <a href="mailto:newcoast.psy@gmail.com">newcoast.psy@gmail.com</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="list-terms-justified">
+                                    <dt>Tel.</dt>
+                                    <dd>
+                                        <a href="tel:+79184445759">+7 918 444 57 59</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="list-terms-justified">
+                                    <dt>Address</dt>
+                                    <dd>
+                                        г.Москва , пр-т Вернадского 84
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section footer-corporate">
+        <div class="shell">
+            <ul style="
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            flex-wrap: wrap;
+                        ">
+                <li class="active rd-navbar--has-dropdown">
+                    <a href="/">Что такое коучинг?</a>
+                </li>
+
+                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                    <a href="#Aboutmyself">О себе</a>
+                </li>
+
+                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                    <a href="#Withwhomiwork">С кем работаю? </a>
+                </li>
+
+                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                    <a href="#Benefits">Преимущества</a>
+                </li>
+
+                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                    <a href="#Duration">Продолжительность</a>
+                </li>
+
+                <li class="active rd-navbar--has-dropdown rd-navbar-submenu">
+                    <a href="#Contacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="shell text-center text-sm-left">
+            <div class="range range-15 range-sm-middle">
+                <div class="cell-sm-6">
+                    <p class="rights">Coaching "New Coast" 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
